@@ -9,6 +9,7 @@ import { HouseSearchComponent } from './house-search/house-search.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 // agm
 import { AgmCoreModule } from '@agm/core';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AgmCoreModule } from '@agm/core';
     GmapComponent,
     HouseListComponent,
     HouseSearchComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
