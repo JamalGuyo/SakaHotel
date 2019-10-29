@@ -1,0 +1,16 @@
+.container-fluid {
+  margin-top: 60px;
+  .main {
+    overflow-x: hidden;
+
+    .map {
+      position: fixed;
+      width: 50%;
+      margin: 1px;
+    }
+    .houses {
+      margin-left: 50%;
+      width: 50%;
+    }
+  }
+}

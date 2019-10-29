@@ -1,5 +1,8 @@
 <div class="row">
-  <div class="col-md-4" *ngFor="let house of houses">
+  <app-house-search></app-house-search>
+</div>
+<div class="row">
+  <div class="col-md-6" *ngFor="let house of houses">
     <div class="card text-white">
       <img [src]="house.image" class="card-img" />
       <div class="card-img-overlay d-flex flex-column justify-content-between">

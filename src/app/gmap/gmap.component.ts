@@ -11,8 +11,9 @@ import { HouseModel } from '../house.model';
 export class GmapComponent implements OnInit, OnDestroy {
   houses: HouseModel[];
   sub: Subscription;
-  lat = 1.2921;
-  lng = 36.8219;
+  lat = 1.3021297;
+  lng = 36.7451004;
+  zoom = 8;
 
   constructor(private houseService: HouseService) {}
 
