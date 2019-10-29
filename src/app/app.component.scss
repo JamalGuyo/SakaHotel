@@ -1,0 +1,23 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.container-fluid {
+  .row {
+    width: 100%;
+    display: flex;
+    border: 2px solid gray;
+    border-top: 2px solid magenta;
+    .map {
+      position: fixed;
+      height: 100vh;
+      order: 1;
+      background: pink;
+    }
+    .houselist {
+      position: relative;
+      order: 2;
+      overflow-x: scroll;
+    }
+  }
+}
