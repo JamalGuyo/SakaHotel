@@ -7,6 +7,8 @@ import { GmapComponent } from './gmap/gmap.component';
 import { HouseListComponent } from './house-list/house-list.component';
 import { HouseSearchComponent } from './house-search/house-search.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+// agm
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -18,9 +20,12 @@ import { WelcomeComponent } from './welcome/welcome.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyA6IHN7s5lp-kjREVy6setIPdrKJgoOkts'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
