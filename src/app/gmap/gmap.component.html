@@ -1,1 +1,13 @@
-<p>gmap works!</p>
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+  <agm-marker
+    *ngFor="let h of houses; let i = index"
+    (markerClick)="clickedMarker(h.label, i)"
+    [latitude]="h.lat"
+    [longitude]="h.lng"
+    [label]="h.label"
+  >
+    <agm-info-window>
+      <strong>InfoWindow content</strong>
+    </agm-info-window>
+  </agm-marker>
+</agm-map>
