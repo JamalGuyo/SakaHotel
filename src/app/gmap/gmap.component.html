@@ -12,21 +12,28 @@
     [label]="h.label"
   >
     <agm-info-window>
-        <div class="card text-white">
-            <img [src]="h.image" class="card-img" />
-            <div class="card-img-overlay d-flex flex-column justify-content-between">
-              <div class="top">
-                <h1 class="address">{{ h.address }}</h1>
-                <h5 class="street">{{ h.street }}</h5>
-              </div>
-              <div class="bottom d-flex justify-content-between">
-                <p>
-                  {{ h.price | currency: 'Ksh' }}
-                </p>
-                <p>{{ h.capacity }}</p>
-              </div>
-            </div>
+      <div class="card text-white">
+        <img [src]="h.image" class="card-img" />
+        <div
+          class="card-img-overlay d-flex flex-column justify-content-between"
+        >
+          <div class="top">
+            <h1 class="address">{{ h.address }}</h1>
+            <h5 class="street">{{ h.street }}</h5>
           </div>
+          <div class="bottom d-flex justify-content-between">
+            <p>
+              {{ h.price | currency: 'Ksh' }}
+            </p>
+            <p>
+              <span class="badge badge-pill badge-info d-flex"
+                ><span class="badge badge-light">{{ h.rating }}</span>
+                <app-star [rating]="h.rating"></app-star
+              ></span>
+            </p>
+          </div>
+        </div>
+      </div>
     </agm-info-window>
   </agm-marker>
 </agm-map>

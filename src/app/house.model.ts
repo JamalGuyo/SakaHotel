@@ -3,7 +3,7 @@ export interface HouseModel {
   address: string;
   street: string;
   price: number;
-  capacity: string;
+  rating: number;
   lat: number;
   lng: number;
   label?: string;

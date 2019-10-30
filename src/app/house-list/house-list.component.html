@@ -17,10 +17,15 @@
           <h5 class="street">{{ house.street }}</h5>
         </div>
         <div class="bottom d-flex justify-content-between">
-          <p>
+          <p class="text-light font-weight-bold">
             {{ house.price | currency: 'Ksh' }}
           </p>
-          <p>{{ house.capacity }}</p>
+          <p>
+            <span class="badge badge-pill badge-info d-flex"
+              ><span class="badge badge-light">{{ house.rating }}</span>
+              <app-star [rating]="house.rating"></app-star
+            ></span>
+          </p>
         </div>
       </div>
     </div>

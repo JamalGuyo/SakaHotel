@@ -16,7 +16,7 @@ export class HouseService {
         street: 'Milimani',
         address: 'Sarova Panafric',
         price: 12401,
-        capacity: '4 star hotel',
+        rating: 4.4,
         lat: -1.2900952,
         lng: 36.7948948,
         label: '4.4'
@@ -27,10 +27,10 @@ export class HouseService {
         street: 'Ngara',
         address: 'Sirona Hotel',
         price: 4646,
-        capacity: '2 star hotel',
-        lat: -1.2718144,
-        lng: 36.8085497,
-        label: '2.0'
+        rating: 2.2,
+        lat: -1.2708726,
+        lng: 36.8153343,
+        label: '2.2'
       },
       {
         image:
@@ -38,9 +38,9 @@ export class HouseService {
         street: 'Westlands',
         address: 'Villa Rosa Kempinski',
         price: 23789,
-        capacity: '5 star hotel',
-        lat: -1.2680358,
-        lng: 36.7987897,
+        rating: 4.9,
+        lat: -1.2718144,
+        lng: 36.8085497,
         label: '5.0'
       },
       {
@@ -49,10 +49,10 @@ export class HouseService {
         street: 'Ngara',
         address: 'Southern Blue',
         price: 2500,
-        capacity: '2 star hotel',
+        rating: 2.2,
         lat: -1.2772633,
         lng: 36.8136137,
-        label: '2.0'
+        label: '2.2'
       },
       {
         image:
@@ -60,10 +60,10 @@ export class HouseService {
         street: 'Ngara',
         address: 'Hotel Boulevard',
         price: 10833,
-        capacity: '3 star hotel',
+        rating: 3.1,
         lat: -1.2751626,
         lng: 36.8112593,
-        label: '3.0'
+        label: '3.1'
       },
       {
         image:
@@ -71,7 +71,7 @@ export class HouseService {
         street: 'UpperHill',
         address: 'Radisson Blue',
         price: 16530,
-        capacity: '4.5 star hotel',
+        rating: 4.5,
         lat: -1.2788508,
         lng: 36.8061894,
         label: '4.5'
@@ -81,10 +81,10 @@ export class HouseService {
         street: 'CBD',
         address: 'Chester Hotel & Suite',
         price: 6596,
-        capacity: '4.0 star hotel',
+        rating: 4.2,
         lat: -1.2806313,
         lng: 36.8107599,
-        label: '4.0'
+        label: '4.2'
       },
       {
         image:
@@ -92,7 +92,7 @@ export class HouseService {
         street: 'CBD',
         address: 'Hilton',
         price: 10080,
-        capacity: '4.4 star hotel',
+        rating: 4.4,
         lat: -1.2841066,
         lng: 36.8169182,
         label: '4.4'

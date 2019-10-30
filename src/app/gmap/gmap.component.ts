@@ -13,7 +13,7 @@ export class GmapComponent implements OnInit, OnDestroy {
   sub: Subscription;
   lat = -1.285571;
   lng = 36.8147777;
-  zoom = 14;
+  zoom = 15;
 
   constructor(private houseService: HouseService) {}
 
@@ -24,8 +24,5 @@ export class GmapComponent implements OnInit, OnDestroy {
   }
   ngOnDestroy(): void {
     this.sub.unsubscribe();
-  }
-  clickedMarker(label: string, index: number) {
-    console.log(`clicked the marker: ${label || index}`);
   }
 }

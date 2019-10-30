@@ -9,6 +9,7 @@ import { GmapComponent } from '../gmap/gmap.component';
 import { HouseListComponent } from '../house-list/house-list.component';
 import { HouseSearchComponent } from '../house-search/house-search.component';
 import { HouseSearchPipe } from '../house-search/house-search.pipe';
+import { StarComponent } from '../shared/star/star.component';
 
 // agm
 import { AgmCoreModule } from '@agm/core';
@@ -19,6 +20,7 @@ import { AgmCoreModule } from '@agm/core';
     HouseListComponent,
     HouseSearchComponent,
     DashboardComponent,
+    StarComponent,
     HouseSearchPipe
   ],
   imports: [
