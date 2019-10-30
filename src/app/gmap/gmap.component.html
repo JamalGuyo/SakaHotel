@@ -1,4 +1,9 @@
-<agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+<agm-map
+  [latitude]="lat"
+  [longitude]="lng"
+  [zoom]="zoom"
+  [mapTypeControl]="true"
+>
   <agm-marker
     *ngFor="let h of houses; let i = index"
     (markerClick)="clickedMarker(h.label, i)"
@@ -7,7 +12,21 @@
     [label]="h.label"
   >
     <agm-info-window>
-      <strong>InfoWindow content</strong>
+        <div class="card text-white">
+            <img [src]="h.image" class="card-img" />
+            <div class="card-img-overlay d-flex flex-column justify-content-between">
+              <div class="top">
+                <h1 class="address">{{ h.address }}</h1>
+                <h5 class="street">{{ h.street }}</h5>
+              </div>
+              <div class="bottom d-flex justify-content-between">
+                <p>
+                  {{ h.price | currency: 'Ksh' }}
+                </p>
+                <p>{{ h.capacity }}</p>
+              </div>
+            </div>
+          </div>
     </agm-info-window>
   </agm-marker>
 </agm-map>

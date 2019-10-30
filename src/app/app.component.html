@@ -1,9 +1,10 @@
 <nav class="navbar fixed-top navbar-light bg-light justify-content-between">
   <a class="navbar-brand" [routerLink]="['/welcome']"
-    ><i class="fab fa-accusoft"></i> UzaHome
+    ><i class="fab fa-accusoft"></i> SakaHotel
   </a>
 </nav>
-<mat-progress-bar mode="buffer" [hidden]="!showLoadingIndicator">
-</mat-progress-bar>
+<div class="progressbar-container" [hidden]="!showLoadingIndicator">
+  <mat-progress-bar mode="buffer"> </mat-progress-bar>
+</div>
 
 <router-outlet [hidden]="showLoadingIndicator"> </router-outlet>

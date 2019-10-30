@@ -11,85 +11,91 @@ export class HouseService {
   getHouses(): Observable<HouseModel[]> {
     return of([
       {
-        image: '../assets/mr-autthaporn-pradidpong-EFV7e9r7Dfg-unsplash.jpg',
-        street: '76th Street',
-        address: 'Westlands',
-        price: 1250,
-        capacity: '1 bedroom',
-        lat: 1.2675,
-        lng: 36.812,
-        label: 'A'
-      },
-      {
-        image: '../assets/evelyn-paris-XJnP4L958ds-unsplash.jpg',
-        street: '22nd Street',
-        address: 'Kilimani',
-        price: 1450,
-        capacity: '1 bedroom',
-        lat: 1.2893,
-        lng: 36.7869,
-        label: 'B'
-      },
-      {
-        image: '../assets/flo-pappert-kspRwqFxOms-unsplash.jpg',
-        street: '33rd Street',
-        address: 'Westlands',
-        price: 1350,
-        capacity: '1 bedroom',
-        lat: 1.2599,
-        lng: 36.8179,
-        label: 'C'
-      },
-      {
-        image: '../assets/gus-ruballo-h5QNclJUiA8-unsplash.jpg',
-        street: '86th Street',
-        address: 'Ngara',
-        price: 1150,
-        capacity: '1 bedroom',
-        lat: 1.2781,
-        lng: 36.8304,
-        label: 'D'
-      },
-      {
-        image: '../assets/gustavo-zambelli-nEvzSXBIhiU-unsplash.jpg',
-        street: '76th Street',
-        address: 'Muthaiga',
-        price: 1500,
-        capacity: '1 bedroom',
-        lat: 1.2501,
-        lng: 36.8213,
-        label: 'E'
+        image:
+          'https://lh5.googleusercontent.com/p/AF1QipP0lii4gnbubO4q0oKj5yuStaPsTY8d116frlPk=w408-h305-k-no',
+        street: 'Milimani',
+        address: 'Sarova Panafric',
+        price: 12401,
+        capacity: '4 star hotel',
+        lat: -1.2900952,
+        lng: 36.7948948,
+        label: '4.4'
       },
       {
         image:
-          '../assets/ialicante-mediterranean-homes-2d4lAQAlbDA-unsplash.jpg',
-        street: '53rd Street',
-        address: 'Runda',
-        price: 1750,
-        capacity: '1 bedroom',
-        lat: 1.2156,
-        lng: 36.815,
-        label: 'F'
+          'https://lh6.googleusercontent.com/proxy/0WL-95rasOV41OLof0j4YCtMzdFkDe8fMtU-2FV-ZZfdt4oy5OAQSMQ-gzMUuATTNvcnFsnc6eadVGZKxu44qBJX63Bp8NnTGGkQHhm8cRP5qux7lI-qjEYGzRFFakUuMsFCyutNtHJq-sPLiOpGc1utWBQrOA=w427-h240-k-no',
+        street: 'Ngara',
+        address: 'Sirona Hotel',
+        price: 4646,
+        capacity: '2 star hotel',
+        lat: -1.2718144,
+        lng: 36.8085497,
+        label: '2.0'
+      },
+      {
+        image:
+          'https://lh5.googleusercontent.com/p/AF1QipOdgUIQYnMqK7wNtS_48AeVFtJ-iQ6JGW9NDpUL=w408-h293-k-no',
+        street: 'Westlands',
+        address: 'Villa Rosa Kempinski',
+        price: 23789,
+        capacity: '5 star hotel',
+        lat: -1.2680358,
+        lng: 36.7987897,
+        label: '5.0'
+      },
+      {
+        image:
+          'https://images.trvl-media.com/hotels/24000000/23460000/23451900/23451840/cbcd97b4_z.jpg',
+        street: 'Ngara',
+        address: 'Southern Blue',
+        price: 2500,
+        capacity: '2 star hotel',
+        lat: -1.2772633,
+        lng: 36.8136137,
+        label: '2.0'
+      },
+      {
+        image:
+          'https://lh3.googleusercontent.com/proxy/u0pDyweJ2_7ctTXpQVLql5j8eLIkvea_ICEOmXAP-GyzrK5Pl5NH5ucQdN9cbL8aUW7OU6PuSSo2UmSxUYTao4yKXI9XxQTyti8ZXuhlEnENuEzRTXrzox9GYdkgg5BRHTGEjIzebv7fV93DLzmzTEi-VZ6azQ=w408-h269-k-no',
+        street: 'Ngara',
+        address: 'Hotel Boulevard',
+        price: 10833,
+        capacity: '3 star hotel',
+        lat: -1.2751626,
+        lng: 36.8112593,
+        label: '3.0'
+      },
+      {
+        image:
+          'https://lh5.googleusercontent.com/p/AF1QipMDlIVazgCTqwmWB1uC_geaU0wCjH9W59hHJPQa=w426-h240-k-no',
+        street: 'UpperHill',
+        address: 'Radisson Blue',
+        price: 16530,
+        capacity: '4.5 star hotel',
+        lat: -1.2788508,
+        lng: 36.8061894,
+        label: '4.5'
       },
       {
         image: '../assets/irina-murza-PJMbzWAz26M-unsplash.jpg',
-        street: '98th Street',
-        address: 'Karen',
-        price: 1650,
-        capacity: '1 bedroom',
-        lat: 1.3169,
-        lng: 36.6903,
-        label: 'G'
+        street: 'CBD',
+        address: 'Chester Hotel & Suite',
+        price: 6596,
+        capacity: '4.0 star hotel',
+        lat: -1.2806313,
+        lng: 36.8107599,
+        label: '4.0'
       },
       {
-        image: '../assets/jesse-roberts-561igiTyvSk-unsplash.jpg',
-        street: '76th Street',
-        address: 'Runda',
-        price: 1550,
-        capacity: '1 bedroom',
-        lat: 1.2156,
-        lng: 36.815,
-        label: 'H'
+        image:
+          'https://lh5.googleusercontent.com/p/AF1QipOHwge3MKmhhHE4YnsEIBjf5MGJDB-Xy8wPWqKg=w408-h330-k-no',
+        street: 'CBD',
+        address: 'Hilton',
+        price: 10080,
+        capacity: '4.4 star hotel',
+        lat: -1.2841066,
+        lng: 36.8169182,
+        label: '4.4'
       }
     ]);
   }
