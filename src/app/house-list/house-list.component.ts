@@ -11,6 +11,7 @@ import { Subscription } from 'rxjs';
 export class HouseListComponent implements OnInit, OnDestroy {
   houses: HouseModel[];
   sub: Subscription;
+  searchText = '';
 
   constructor(private houseService: HouseService) {}
 
@@ -22,5 +23,8 @@ export class HouseListComponent implements OnInit, OnDestroy {
   }
   ngOnDestroy(): void {
     this.sub.unsubscribe();
+  }
+  onSearch(data) {
+    this.searchText = data;
   }
 }

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { HouseModel } from '../house.model';
+import { HouseService } from '../house.service';
 
 @Component({
   selector: 'app-house-search',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./house-search.component.scss']
 })
 export class HouseSearchComponent implements OnInit {
-
-  constructor() { }
+  @Output() sendSearchText: EventEmitter<string> = new EventEmitter<string>();
+  listFilter = '';
+  constructor() {}
 
   ngOnInit() {
+    console.log();
   }
 
+  onSearch() {
+    this.sendSearchText.emit(this.listFilter);
+  }
 }

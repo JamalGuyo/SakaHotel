@@ -5,11 +5,8 @@
       class="form-control"
       aria-label="search houses"
       placeholder="search location"
+      [(ngModel)]="listFilter"
+      (ngModelChange)="onSearch()"
     />
-    <div class="input-group-append">
-      <button class="btn btn-light text-dark border border-light">
-        search
-      </button>
-    </div>
   </div>
 </div>

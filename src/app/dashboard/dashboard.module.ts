@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 // components
 import { DashboardComponent } from './dashboard.component';
 import { GmapComponent } from '../gmap/gmap.component';
 import { HouseListComponent } from '../house-list/house-list.component';
 import { HouseSearchComponent } from '../house-search/house-search.component';
+import { HouseSearchPipe } from '../house-search/house-search.pipe';
 
 // agm
 import { AgmCoreModule } from '@agm/core';
@@ -16,10 +18,12 @@ import { AgmCoreModule } from '@agm/core';
     GmapComponent,
     HouseListComponent,
     HouseSearchComponent,
-    DashboardComponent
+    DashboardComponent,
+    HouseSearchPipe
   ],
   imports: [
     CommonModule,
+    FormsModule,
     RouterModule.forChild([
       {
         path: '',
