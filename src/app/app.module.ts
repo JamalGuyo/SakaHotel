@@ -1,31 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { DashboardModule } from './dashboard/dashboard.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
-import { GmapComponent } from './gmap/gmap.component';
-import { HouseListComponent } from './house-list/house-list.component';
-import { HouseSearchComponent } from './house-search/house-search.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-// agm
-import { AgmCoreModule } from '@agm/core';
-import { DashboardComponent } from './dashboard/dashboard.component';
+
+// material module
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    GmapComponent,
-    HouseListComponent,
-    HouseSearchComponent,
-    WelcomeComponent,
-    DashboardComponent
-  ],
+  declarations: [AppComponent, WelcomeComponent],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule,
     AppRoutingModule,
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyA6IHN7s5lp-kjREVy6setIPdrKJgoOkts'
-    })
+    DashboardModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

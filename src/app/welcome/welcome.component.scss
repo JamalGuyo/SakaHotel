@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap');
 .wrapper {
   height: 100vh;
   color: white;
   background-image: linear-gradient(135deg, blue, purple 50%);
+  h1 {
+    font-family: 'Black Ops One', cursive;
+  }
+  button {
+    font-family: 'Black Ops one', cursive;
+  }
 }

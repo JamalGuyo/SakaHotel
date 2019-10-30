@@ -1,5 +1,9 @@
-<div class="row">
-  <app-house-search></app-house-search>
+<app-house-search></app-house-search>
+<div class="d-flex justify-content-end m-1">
+  <span class="badge badge-pill badge-info"
+    >listed houses
+    <span class="badge badge-light">{{ houses.length }}</span></span
+  >
 </div>
 <div class="row">
   <div class="col-md-6" *ngFor="let house of houses">

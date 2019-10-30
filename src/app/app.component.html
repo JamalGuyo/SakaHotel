@@ -1,4 +1,9 @@
 <nav class="navbar fixed-top navbar-light bg-light justify-content-between">
-  <a class="navbar-brand" href="#"><i class="fab fa-accusoft"></i> UzaHome </a>
+  <a class="navbar-brand" [routerLink]="['/welcome']"
+    ><i class="fab fa-accusoft"></i> UzaHome
+  </a>
 </nav>
-<router-outlet> </router-outlet>
+<mat-progress-bar mode="buffer" [hidden]="!showLoadingIndicator">
+</mat-progress-bar>
+
+<router-outlet [hidden]="showLoadingIndicator"> </router-outlet>

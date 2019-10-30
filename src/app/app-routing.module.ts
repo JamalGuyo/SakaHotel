@@ -15,7 +15,7 @@ const routes: Routes = [
   },
   {
     path: 'houses',
-    component: DashboardComponent
+    loadChildren: './dashboard/dashboard.module#DashboardModule'
   },
   {
     path: '**',
