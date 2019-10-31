@@ -15,11 +15,11 @@ const routes: Routes = [
     component: WelcomeComponent
   },
   {
-    path: 'houses',
+    path: 'hotels',
     loadChildren: './dashboard/dashboard.module#DashboardModule'
   },
   {
-    path: 'house-detail',
+    path: 'hotel-detail',
     component: HouseDetailsComponent
   },
   {

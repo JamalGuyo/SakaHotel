@@ -6,13 +6,12 @@
 >
   <agm-marker
     *ngFor="let h of houses; let i = index"
-    (markerClick)="clickedMarker(h.label, i)"
     [latitude]="h.lat"
     [longitude]="h.lng"
     [label]="h.label"
   >
     <agm-info-window>
-      <div class="card text-white">
+      <div class="card text-white" (click)="openHotelDetails(h)">
         <img [src]="h.image" class="card-img" />
         <div
           class="card-img-overlay d-flex flex-column justify-content-between"

@@ -6,6 +6,8 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class HouseService {
+  public selectedHouse: HouseModel;
+
   constructor() {}
 
   getHouses(): Observable<HouseModel[]> {

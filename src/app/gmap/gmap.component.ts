@@ -1,7 +1,8 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, TemplateRef } from '@angular/core';
 import { HouseService } from '../house.service';
 import { Subscription } from 'rxjs';
 import { HouseModel } from '../house.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-gmap',
@@ -15,7 +16,7 @@ export class GmapComponent implements OnInit, OnDestroy {
   lng = 36.8147777;
   zoom = 15;
 
-  constructor(private houseService: HouseService) {}
+  constructor(private houseService: HouseService, private router: Router) {}
 
   ngOnInit() {
     this.sub = this.houseService.getHouses().subscribe({
@@ -24,5 +25,10 @@ export class GmapComponent implements OnInit, OnDestroy {
   }
   ngOnDestroy(): void {
     this.sub.unsubscribe();
+  }
+
+  openHotelDetails(h): void {
+    this.router.navigate(['/hotel-detail']);
+    this.houseService.selectedHouse = h;
   }
 }

@@ -1,7 +1,38 @@
-<nav class="navbar fixed-top navbar-dark bg-dark justify-content-between">
+<nav
+  class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark justify-content-between"
+>
   <a class="navbar-brand" [routerLink]="['/welcome']"
-    ><i class="fab fa-accusoft"></i> SakaHotel
+    ><span class="fa fa-accusoft"></span> SakaHotel
   </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a
+          class="nav-link"
+          [routerLink]="['/welcome']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Welcome <span class="sr-only">(current)</span></a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/hotels']" routerLinkActive="active"
+          >Hotels</a
+        >
+      </li>
+    </ul>
+  </div>
 </nav>
 <div class="progressbar-container" [hidden]="!showLoadingIndicator">
   <mat-progress-bar mode="buffer"> </mat-progress-bar>
