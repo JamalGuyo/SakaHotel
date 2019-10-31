@@ -9,7 +9,7 @@
 </div>
 <div class="row">
   <div class="col-md-6" *ngFor="let house of houses | filterHouse: searchText">
-    <div class="card text-white">
+    <div class="card text-white" (click)="openHotelDetails(house)">
       <img [src]="house.image" class="card-img" />
       <div class="card-img-overlay d-flex flex-column justify-content-between">
         <div class="top">
