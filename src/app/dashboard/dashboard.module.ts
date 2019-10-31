@@ -10,6 +10,7 @@ import { HouseListComponent } from '../house-list/house-list.component';
 import { HouseSearchComponent } from '../house-search/house-search.component';
 import { HouseSearchPipe } from '../house-search/house-search.pipe';
 import { StarComponent } from '../shared/star/star.component';
+import { HouseDetailsComponent } from '../house-list/house-details/house-details.component';
 
 // agm
 import { AgmCoreModule } from '@agm/core';
@@ -21,7 +22,8 @@ import { AgmCoreModule } from '@agm/core';
     HouseSearchComponent,
     DashboardComponent,
     StarComponent,
-    HouseSearchPipe
+    HouseSearchPipe,
+    HouseDetailsComponent
   ],
   imports: [
     CommonModule,

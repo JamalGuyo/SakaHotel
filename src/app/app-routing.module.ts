@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HouseDetailsComponent } from './house-list/house-details/house-details.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'houses',
     loadChildren: './dashboard/dashboard.module#DashboardModule'
+  },
+  {
+    path: 'house-detail',
+    component: HouseDetailsComponent
   },
   {
     path: '**',
